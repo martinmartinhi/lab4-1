@@ -1,0 +1,123 @@
+﻿<html>
+ <head> 
+  <title>edit</title> 
+  <meta http-equiv="Content-Type" content="text/html; charset=gb2312" /> 
+  <style type="text/css">
+			body {	background-image: url(../../images/?id=Background.jpg);background-repeat: no-repeat;
+			background-position: center;background-attachment: fixed;}
+		</style> 
+ </head> 
+ <body> 
+  <form method="post" action="/addbook/"> 
+   <p>&nbsp;</p> 
+   
+   <center>
+    <h1> <strong>新增图书</strong> </h1>
+   </center> 
+   <p>&nbsp;</p> 
+   <center>
+    <h1> 请输入图书信息 </h1>
+   </center> 
+   <table border="2" align="center" bgcolor="#FFFFFF"> 
+    <tbody>
+     <tr> 
+      <td>
+       <center>
+        ISBN
+       </center></td> 
+      <td>
+       <center> 
+        <input name="ISBN" type="text" placeholder="不能为空" class="login-field" /> 
+       </center></td> 
+      <td>
+       <center> 
+       </center></td>
+     </tr>
+     <tr> 
+      <td>
+       <center>
+        Title
+       </center></td> 
+      <td>
+       <center> 
+        <input name="title" type="text" placeholder="不能为空" class="login-field" /> 
+       </center></td> 
+      <td>
+       <center> 
+       </center></td>
+     </tr> 
+     <tr> 
+      <td>
+       <center>
+        AuthorID
+       </center></td> 
+      <td>
+       <center> 
+        <input name="authorid" type="text" placeholder="不能为空" class="login-field" /> 
+       </center></td> 
+      <td>
+       <center> 
+       </center></td>
+     </tr> 
+     <tr> 
+      <td>
+       <center>
+        Publisher
+       </center></td> 
+      <td>
+       <center> 
+        <input name="publisher" type="text" /> 
+       </center></td> 
+      <td>
+       <center> 
+       </center></td>
+     </tr> 
+     <tr> 
+      <td>
+       <center>
+        PublishDate
+       </center></td> 
+      <td>
+       <center> 
+        <input name="publishdate" type="text" /> 
+       </center></td> 
+      <td>
+       <center> 
+       </center></td>
+     </tr> 
+     <tr> 
+      <td>
+       <center>
+        Price
+       </center></td> 
+      <td>
+       <center> 
+        <input name="price" type="text" /> 
+       </center></td> 
+      <td>
+       <center> 
+       </center></td>
+     </tr> 
+     <tr> 
+      <td>
+       <center>
+        操作
+       </center></td> 
+      <td> 
+       <center> 
+       	<input type="submit" value="保存" />
+        <input type="reset" value="清除" /> 
+       </center></td> 
+     </tr> 
+    </tbody>
+   </table> 
+   <p>&nbsp;</p> 
+  </form> 
+  <p>&nbsp;</p> 
+  <form method="post" action="/catlog/">
+  <center>
+   <button> <a href="../catlog/"> 回到主页 </a> </button>
+  </center>  
+  </form>
+ </body>
+</html>

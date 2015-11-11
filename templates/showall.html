@@ -1,0 +1,53 @@
+﻿<html>
+ <head> 
+  <title>show</title> 
+  <meta http-equiv="Content-Type" content="text/html; charset=gb2312" /> 
+ </head> 
+ <body> 
+  <p>&nbsp;</p> 
+  <p>&nbsp;</p> 
+  <p>&nbsp;</p> 
+  <center> 
+   <h1> <strong>以下为该数据库收集的所有图书</strong> </h1> 
+  </center> 
+
+  <table border="2" align="center"> 
+   <tbody> 
+    <tr> 
+     <th> 
+      <center>
+        书籍名称 
+      </center></th> 
+     <th> 
+      <center>
+        操作 
+      </center></th> 
+    </tr> {% for book in book_lst %} 
+    <tr> 
+     <td>
+     <a href="/showdata/?id={{book.title}}"> {{book.title}} </a></td>
+     <td> 
+      <center> 
+       <a href="/delete/?id={{book.title}}">删除</a> 
+       <a href="/update/?id={{book.title}}">更新</a>  
+      </center> </td> 
+    </tr>
+	{% endfor %}
+   </tbody> 
+  </table> 
+  <p>&nbsp;</p> 
+  <p>&nbsp;</p> 
+  <form method="post" action="/add/">
+   <center> 
+    <button> <a href="../add/"> 增加书籍信息 </a> </button> 
+   </center> 
+  </form>
+  <form method="post" action="/catlog/">
+   <center> 
+    <button> <a href="../catlog/"> 回到主页 </a> </button> 
+   </center> 
+  </form>
+   <p>&nbsp;</p>  
+  </form>
+ </body>
+</html>

@@ -1,0 +1,85 @@
+﻿<html>
+ <head> 
+  <title>edit</title> 
+  <meta http-equiv="Content-Type" content="text/html; charset=gb2312" /> 
+ </head> 
+ <body> 
+  <form method="post" action="/showdata/"> 
+   <p>&nbsp;</p> 
+   <p>&nbsp;</p> 
+   <center>
+    <h1> <strong>图书信息</strong> </h1>
+   </center> 
+   <p>&nbsp;</p> 
+   <p>&nbsp;</p> 
+   <table border="2" align="center" bgcolor="#FFFFFF"> 
+    <tbody>
+     <tr> 
+      <td>
+       <center>
+        ISBN
+       </center></td> 
+      <td> {{book.ISBN}}</td> 
+     </tr> 
+     <tr> 
+      <td>
+       <center>
+        Title
+       </center></td> 
+      <td> {{book.title}}</td> 
+     </tr> 
+     <tr> 
+      <td>
+       <center>
+        Author
+       </center></td> 
+      <td> {{author.name}}</td> 
+      <td>
+       <center> 
+       </center></td>
+     </tr> 
+     <tr> 
+      <td>
+       <center>
+        Publisher
+       </center></td> 
+      <td> {{book.publisher}}</td> 
+     </tr> 
+     <tr> 
+      <td>
+       <center>
+        PublishDate
+       </center></td> 
+      <td> {{book.publishdate}}</td> 
+     </tr> 
+     <tr> 
+      <td>
+       <center>
+        Price
+       </center></td> 
+      <td> {{book.price}}</td> 
+     </tr> 
+     <tr> 
+      <td>
+       <center>
+        Age
+       </center></td> 
+      <td> {{author.age}}</td> 
+     </tr> 
+     <tr> 
+      <td>
+       <center>
+        Country
+       </center></td> 
+      <td> {{author.country}}</td> 
+     </tr> 
+    </tbody>
+   </table> 
+   <p>&nbsp;</p> 
+  </form> 
+  <p>&nbsp;</p> 
+  <center>
+   <a href="/catlog/"> 回到主页 </a>
+  </center>  
+ </body>
+</html>

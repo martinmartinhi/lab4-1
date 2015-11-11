@@ -1,0 +1,8 @@
+def search(request):
+    if 'name' in request.POST:
+        Multiple_people = People(name = request.POST['name'],std_num = request.POST['std_num'],
+        phone =  request.POST['phone'],email = request.POST['email'],QQ = request.POST['QQ'],
+        address = request.POST['address'],birthdate = request.POST['birthdate'])
+        Multiple_people.save()
+    people_lst = People.objects.all()
+    return render_to_response('show.html', {'people_lst': people_lst})

@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>welcome</title>
+<meta http-equiv="Content-Type" content="textml; charset=gb2312">
+<style type="text/css">
+	body {	background-image: url(../imagesid=Background.jpg);background-repeat: no-repeat;
+		background-position: center;background-attachment: fixed;}
+</style>
+</head>
+
+<body>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>
+<center><font size = 9; color = red>
+	<strong>Welcome<>
+</font></center>
+</p>
+<center><h1>欢迎使用 !</h1></center>
+<center><font color = #990000>欢迎</font>  
+<font color = #FFFFFF><span>
+	{{ username }}
+</span></font></center>
+    {% if username != 'anybody' %}
+    	<center><button>
+		<a href="/logout/"> 退出 </a>
+	<tton></center>
+    	<center><button>
+		<a href = "../index/"> 开始菜单 </a>
+	<tton></center>
+    {% else %}
+    	<center><button>
+		<a href="/login/"> 登陆 </a><tton>
+	</center>
+	<center><button>
+		<a href="/register/"> 注册</a>
+	<tton></center>
+    {% endif %}
+</body>
+<ml>

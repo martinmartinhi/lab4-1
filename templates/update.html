@@ -1,0 +1,84 @@
+﻿<html>
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=gb2312" /> 
+  <title>更新</title> 
+ </head> 
+ <body> 
+  <center>
+   <font size="9;" color="blue"> <strong>更新书籍 </strong></font>
+  </center>
+  <p>&nbsp;</p> 
+    <form method="post" action="/update/">
+    <center>{{book.title}}  
+    </center> 
+    <table border="2" align="center" bgcolor="#FFFFFF"> 
+    <tbody>
+     <tr> 
+      <td>
+       <center>
+        ISBN
+       </center></td> 
+      <td>
+       <center> 
+        <input type="label" name="ISBN" value={{book.ISBN}}>
+       </center></td> 
+     </tr>
+     <tr> 
+      <td>
+       <center>
+        书名
+       </center></td> 
+      <td>
+       <center> 
+        <input type="label" name="title" value={{book.title}}>
+       </center></td> 
+     </tr> 
+     <tr> 
+      <td>
+       <center>
+       作者ID
+       </center></td> 
+      <td>
+       <center> 
+        <input type="text" name="authorid" value={{book.authorid}}>
+       </center></td> 
+     </tr> 
+     <tr> 
+      <td>
+       <center>
+        出版商
+       </center></td> 
+      <td>
+       <center> 
+        <input type="text" name="publisher" value={{book.publisher}}> 
+       </center></td> 
+     </tr> 
+     <tr> 
+      <td>
+       <center>
+        出版日期
+       </center></td> 
+      <td>
+       <center> 
+         <input type="text" name="publishdate" value={{book.publishdate}}> 
+       </center></td> 
+     </tr> 
+     <tr> 
+      <td>
+       <center>
+       价格
+       </center></td> 
+      <td>
+       <center> 
+        <input type="text" name="price" value={{book.price}}>
+       </center></td> 
+     </tr> 
+    </tbody>
+   </table>
+   <p>&nbsp;</p>  
+    <center> 
+     <input type="submit" value="保存" /> 
+    </center> 
+   </form>   
+ </body>
+</html>

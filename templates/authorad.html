@@ -1,0 +1,32 @@
+﻿<html>
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=gb2312" /> 
+  <title>添加作者</title> 
+ </head> 
+ <body> 
+  <center>
+   <font size="9;" color="blue"> <strong>添加作者 </strong></font>
+
+  </center>
+  <strong> <p>&nbsp;</p> <p>&nbsp;</p>
+
+   <form method="post" action="/authorad/"> 
+   
+	<center>
+     作者ID默认，请勿修改 
+   </center>
+  <p align="center"><input type="text" name="authorid" value="{{authorid}}" class="login-field" /> </p>
+   
+    <p align="center"><input type="text" name="name" placeholder="名字" class="login-field" /> </p>
+    <p align="center"><input type="text" name="age" placeholder="年龄" class="login-field" /> </p>
+    <p align="center"><input type="text" name="country" placeholder="国家" class="login-field" /></p> 
+    <center>
+     <input type="submit" value="保存" /> 
+    </center>
+   </form>   
+   <center>
+   <button> <a href="/catlog/">回到主页</a> </button>
+  </center> 
+
+ </body>
+</html>
